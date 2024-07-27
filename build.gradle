@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.rrayy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    implementation 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'com.rrayy.sunlightburn.SunlightBurnPlugin'
+        )
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
