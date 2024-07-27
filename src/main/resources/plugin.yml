@@ -1,6 +1,6 @@
 name: SunlightBurnPlugin
 version: 1.0
 main: com.rrayy.sunlightburn.SunlightBurnPlugin
-api-version: 1.16
+api-version: 1.19
 description: A plugin that makes players burn in sunlight like a zombie.
 author: rrayy
