@@ -1,3 +1,5 @@
+# SunlightBurnPlugin
+
 너무 더운!
 
 햇빛을 받으면 타죽는!
