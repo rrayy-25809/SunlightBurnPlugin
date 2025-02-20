@@ -27,7 +27,7 @@ public class SunlightBurnPlugin extends JavaPlugin{
                     for (Player player : world.getPlayers()) {
                         if (player.getWorld().getTime() < 12300 || player.getWorld().getTime() > 23850) { // Daytime check
                             if (player.getLocation().getBlock().getLightFromSky() == 15) { // Direct sunlight check
-                                player.setFireTicks(20); // Set player on fire for 1 second
+                                player.setFireTicks(40); // Set player on fire for 2 seconds
                                 player.damage(6.0); // 추가 데미지 부여
                             }
                         }
